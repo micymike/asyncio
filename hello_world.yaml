@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/asynchronous-flows/asyncflows/main/schemas/asyncflows_schema.json
+
+default_model:
+  model: ollama/llama3
+  api_base: https://raphaelfrancis.com/ollama
+  auth_token: SmartMintDove:103933ad84da99b448cc8baa76d1985e9c348ca9bf51f3212f90947ebbf917da4a98bc9a8c43030364d027d23b2664a2cc991027af4b05c7ac7cea55
+flow:
+  hello_world:
+    action: prompt
+    prompt:
+      - text: Can you say hello world to {{ name }}
+default_output: hello_world.result
